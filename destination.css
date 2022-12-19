@@ -1,0 +1,323 @@
+body {
+  background-color: #0b0d17;
+  background-image: url(./imgs/destinationPhotos/StarsBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+h1,
+h2 {
+  color: #ffffff;
+}
+
+.pageMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px 0px 0px 70px;
+  width: max-content;
+  align-items: right;
+  justify-content: right;
+}
+.pageMenu h1 {
+  opacity: 0.25;
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+}
+.pageMenu h2 {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  margin: 0px 16px 0px;
+}
+#name {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  text-transform: uppercase;
+  margin-bottom: -68px;
+  margin-top: -58px;
+  color: #ffffff;
+}
+#description {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  width: 444px;
+  color: #d0d6f9;
+  margin-bottom: 40px;
+}
+.stringInfo {
+  width: 40%;
+  float: right;
+}
+.imgInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  margin-left: 40px;
+}
+.botoes {
+  margin-top: -38px;
+}
+#subBarButton {
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.7px;
+  transition: 0.7s;
+  color: #d0d6f9;
+  background: none;
+  border: none;
+  margin-right: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+#subBarButton:focus {
+  color: white;
+}
+#subBarButton::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: white;
+  color: white;
+  margin: auto;
+  display: block;
+  bottom: 5px;
+}
+#subBarButton:hover::after {
+  width: 100%;
+  transition: 0.3s;
+  color: gray;
+}
+.barra2 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+#iconBarra2 {
+  display: flex;
+  float: right;
+  width: 400px;
+}
+.extraInfo {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 20px 0px 0px 0px;
+}
+#avgd {
+  font-size: 14px;
+  color: #d0d6f9;
+  font-family: "Barlow Condensed";
+  letter-spacing: 2.36px;
+}
+#distance {
+  font-size: 28px;
+  color: white;
+  font-family: "Bellefair";
+  margin-top: -32px;
+}
+.extraInfo2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: -129px;
+  width: 40%;
+  margin-left: 200px;
+}
+#est {
+  font-size: 14px;
+  color: #d0d6f9;
+  font-family: "Barlow Condensed";
+  letter-spacing: 2.36px;
+}
+#time {
+  font-size: 28px;
+  color: white;
+  font-family: "Bellefair";
+  margin-top: -32px;
+}
+@media only screen and (max-width: 950px) {
+  .imgInfo img {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: auto;
+    margin-top: 32vh;
+    margin-left: -24.5vw;
+  }
+  .bothExtraInfo {
+    display: flex;
+    margin-top: 3vh;
+  }
+  .imgInfo {
+    align-self: center;
+    justify-content: center;
+  }
+  .pageMenu {
+    display: flex;
+    float: left;
+    margin-top: 40px;
+    margin-left: 0vw;
+    width: 50%;
+  }
+  .stringInfo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin-top: 50vh;
+  }
+  .botoes {
+    margin: auto;
+    width: -webkit-fill-available;
+    justify-content: center;
+    text-align: center;
+  }
+  #subBarButton {
+    font-size: 24px;
+  }
+  .pageMenu {
+    margin: auto;
+  }
+  #name {
+    font-size: 90px;
+    margin: auto;
+    width: 100vw;
+    margin-top: 5vh;
+    margin-bottom: 0vh;
+    text-align: center;
+    height: 125px;
+  }
+  #name p {
+    margin: auto;
+  }
+  #description {
+    display: flex;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #d0d6f9;
+    width: 75vw;
+    margin: auto;
+    margin-top: -2vh;
+    margin-bottom: 3vh;
+    text-align: center;
+  }
+  .barra2 {
+    margin: auto;
+  }
+  #iconBarra2 {
+    width: 80vw;
+  }
+  .extraInfo {
+    display: flex;
+    float: left;
+    margin: auto;
+    margin-left: 10vw;
+  }
+  #avgd {
+    font-size: 18px;
+    color: #d0d6f9;
+    font-family: "Barlow Condensed";
+    letter-spacing: 2.36px;
+    text-align: center;
+  }
+  #distance {
+    font-size: 39px;
+    color: white;
+    font-family: "Bellefair";
+    margin-top: -3vh;
+    text-align: center;
+  }
+  .extraInfo2 {
+    display: flex;
+    float: right;
+    margin: auto;
+    margin-right: 10vw;
+  }
+  #est {
+    font-size: 18px;
+    color: #d0d6f9;
+    font-family: "Barlow Condensed";
+    letter-spacing: 2.36px;
+    text-align: center;
+  }
+  #time {
+    font-size: 39px;
+    color: white;
+    font-family: "Bellefair";
+    margin-top: -3vh;
+    text-align: center;
+  }
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pageMenu {
+    margin: auto;
+    width: -webkit-fill-available;
+    justify-content: center;
+    text-align: center;
+  }
+  .pageMenu h1 {
+    font-size: 20px;
+  }
+  .pageMenu h2 {
+    font-size: 20px;
+  }
+  .imgInfo img {
+    display: flex;
+    margin: 32vh 0vw 0vh -49vw;
+    width: 330px;
+    height: auto;
+  }
+  #iconBarra2 {
+    width: 90vw;
+  }
+  #description {
+    margin-top: -4vh;
+  }
+  .extraInfo {
+    margin: auto;
+  }
+  .extraInfo2 {
+    margin: auto;
+    margin-top: -5vh;
+  }
+  .bothExtraInfo {
+    margin-top: 3vh;
+    flex-direction: column;
+  }
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .imgInfo img {
+    width: 65vw;
+  }
+  #subBarButton {
+    font-size: 20px;
+  }
+  #name {
+    height: 130px;
+  }
+}

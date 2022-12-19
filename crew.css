@@ -1,0 +1,196 @@
+body {
+  background-image: url(./imgs/crewPhotos/crewBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0b0d17;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+main {
+  display: flex;
+  height: 85%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+p,
+h1,
+h2 {
+  color: white;
+}
+
+.pageTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40px;
+}
+.pageTitle h1 {
+  opacity: 0.25;
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+}
+.pageTitle h2 {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  margin: 0px 16px 0px;
+}
+
+.verbalInfo {
+  display: flex;
+  flex-direction: column;
+}
+.imgInfo {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+.info {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+}
+#personRole {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 32px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin-bottom: -56px;
+}
+#personName {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  text-transform: uppercase;
+  margin-bottom: -38px;
+}
+#personFunction {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  width: 444px;
+}
+.imgInfo img {
+  width: 90%;
+  z-index: -1;
+}
+#button {
+  background-color: white;
+  opacity: 0.17;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  border: none;
+  margin: 80px 24px 0px 0px;
+  font-size: 0px;
+}
+#button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.botoes {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 950px) {
+  .imgInfo img {
+    position: relative;
+    width: 100%;
+  }
+  .imgInfo {
+    align-self: center;
+  }
+  .pageTitle {
+    margin-left: 20px;
+  }
+  .verbalInfo {
+    width: 100%;
+  }
+  .botoes {
+    margin-top: -45px;
+  }
+  .pageTitle {
+    margin-top: 40px;
+    margin-left: 45px;
+  }
+  #personName {
+    font-size: 40px;
+    margin-top: 85px;
+  }
+  #personFunction {
+    width: 490px;
+    padding-top: 5px;
+  }
+  #personRole {
+    font-size: 25px;
+    margin-bottom: -75px;
+  }
+  .info {
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .imgInfo {
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+  .imgInfo img {
+    width: 55%;
+  }
+  .botoes {
+    display: flex;
+    justify-content: center;
+    margin: -60px 0px 65px;
+  }
+  .stringInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #personRole {
+    margin-bottom: -135px;
+  }
+  #personName {
+    margin-top: 85px;
+  }
+  #personFunction {
+    width: 350px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .info {
+    margin-top: -16px;
+  }
+  .pageTitle {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .pageTitle h1 {
+    font-size: 20px;
+  }
+  .pageTitle h2 {
+    font-size: 20px;
+  }
+}

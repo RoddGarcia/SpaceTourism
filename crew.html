@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Space Tourism - Crew</title>
+    <!--CSS PAGES-->
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="crew.css" />
+    <!--IMPORTING FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="pageDefiner(0)">
+    <content>
+      <header>
+        <div class="images">
+          <img id="iconEstrela" src="imgs/home/iconEstrela.svg" />
+          <img id="iconBarra" src="imgs/home/Rectangle.png" />
+          <div id="menuCloser" onclick="menuClose()">
+            <img id="closeIcon" src="menuClose.svg" />
+          </div>
+          <div id="menuOpener">
+            <img src="menuOpen.svg" onclick="menuOpen()" />
+          </div>
+        </div>
+
+        <!-- MENU -->
+        <nav id="menuBar">
+          <div class="userChoices">
+            <a id="item" href="index.html"
+              ><b style="font-weight: 700;">00</b> HOME</a
+            >
+            <a id="item" href="destination.html"
+              ><b style="font-weight: 700;">01</b> DESTINATION</a
+            >
+            <a id="item" href="crew.html"
+              ><b style="font-weight: 700;">02</b> CREW</a
+            >
+            <a id="item" href="technology.html"
+              ><b style="font-weight: 700;">03</b> TECHNOLOGY</a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <!--INFORMATIONS-->
+      <div class="pageTitle">
+        <h1>02</h1>
+        <h2>MEET YOUR CREW</h2>
+      </div>
+      <main>
+        <div class="verbalInfo">
+          <container class="info">
+            <div class="stringInfo">
+              <p id="personRole"></p>
+              <p id="personName"></p>
+              <p id="personFunction"></p>
+
+              <div class="botoes">
+                <input
+                  type="button"
+                  id="button"
+                  value="0"
+                  onclick="pageDefiner(value)"
+                  style="color: black;"
+                />
+                <input
+                  type="button"
+                  id="button"
+                  value="1"
+                  onclick="pageDefiner(value)"
+                  style="color: black;"
+                />
+                <input
+                  type="button"
+                  id="button"
+                  value="2"
+                  onclick="pageDefiner(value)"
+                  style="color: black;"
+                />
+                <input
+                  type="button"
+                  id="button"
+                  value="3"
+                  onclick="pageDefiner(value)"
+                  style="color: black;"
+                />
+              </div>
+            </div>
+          </container>
+        </div>
+
+        <div class="imgInfo" id="personImage"></div>
+      </main>
+    </content>
+
+    <!--JS FILE-->
+    <script src="crew.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

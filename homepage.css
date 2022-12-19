@@ -1,0 +1,143 @@
+body {
+  background-color: #0b0d17;
+  background-image: url(./imgs/home/planetaBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/** INFO **/
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0px 50px 0px;
+  padding: 0px 40px 0px;
+}
+.infoHeader,
+.exploreDiv {
+  padding-top: 200px;
+}
+.infoHeader {
+  color: white;
+}
+.infoHeader h1 {
+  font-size: 150px;
+  margin: 0px;
+}
+.infoHeader h2 {
+  letter-spacing: 5px;
+  font-size: 28px;
+  margin: 0px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+}
+.infoHeader p {
+  text-align: justify;
+  line-height: 32px;
+  margin: 0px;
+  color: #d0d6f9;
+  width: 450px;
+}
+
+/** EXPLORE **/
+
+.exploreDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.exploreButton {
+  background-color: white;
+  aspect-ratio: 1/1;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 60%;
+  transition: 0.7s;
+}
+.item {
+  display: flex;
+  justify-content: center;
+}
+.exploreButton p {
+  font-size: 32px;
+}
+.exploreButton:hover {
+  cursor: pointer;
+  transition: 0.7s;
+  width: 140px;
+}
+
+@media only screen and (max-width: 950px) {
+  .exploreDiv {
+    margin-right: 50px;
+  }
+  .exploreButton {
+    width: 100px;
+  }
+  .infoHeader h1 {
+    font-size: 90px;
+  }
+  .infoHeader h2 {
+    letter-spacing: 3px;
+    font-size: 14px;
+  }
+  .infoHeader p {
+    font-size: 15px;
+    text-align: justify;
+    width: 282px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(./imgs/home/mobilePlanetaBG.png);
+  }
+  .infoHeader h1 {
+    font-size: 120px;
+    text-align: center;
+  }
+  .infoHeader h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .infoHeader p {
+    font-size: 16px;
+    text-align: center;
+  }
+  main {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .exploreDiv {
+    margin-right: 0px;
+  }
+  .exploreButton {
+    padding: 8%;
+  }
+  #headerP {
+    display: flex;
+    justify-content: center;
+  }
+  .infoHeader,
+  .exploreDiv {
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .infoHeader h1 {
+    font-size: 80px;
+  }
+  .infoHeader h2 {
+    font-size: 16px;
+  }
+  .infoHeader p {
+    font-size: 15px;
+  }
+}

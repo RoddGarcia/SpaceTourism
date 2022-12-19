@@ -1,0 +1,298 @@
+body {
+  background-image: url(./imgs/technologyPhotos/backgroundTech.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0b0d17;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+main {
+  display: flex;
+  height: 85%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pageTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40px;
+}
+.pageTitle h1 {
+  opacity: 0.25;
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+}
+.pageTitle h2 {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  margin: 0px 16px 0px;
+}
+
+.verbalInfo {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+.imgInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+}
+.info {
+  margin-top: 80px;
+  display: flex;
+}
+.imgInfo img {
+  width: 105%;
+  z-index: -1;
+}
+.button {
+  background-color: rgba(10, 10, 10, 0.315);
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  border: sold 2px grey;
+  margin: 10px 24px 0px 0px;
+  color: white;
+  font-size: 28px;
+  font-family: "Bellefair";
+  border-color: white;
+  border-width: 0.2px;
+}
+
+.btn_nota_ativa {
+  background-color: rgba(255, 255, 255, 0.918);
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  border: sold 2px grey;
+  margin: 10px 24px 0px 0px;
+  color: black;
+}
+
+.button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+main {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.imgInfo img {
+  width: 90%;
+  margin-top: -100px;
+}
+.botoes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 100px;
+}
+.stringInfo {
+  display: flex;
+  flex-direction: column;
+  font-family: "Barlow Condensed";
+  width: 100%;
+  margin-left: 5vw;
+}
+#TechName {
+  font-size: 60px;
+  font-family: "Bellefair";
+  height: 10%;
+  margin-bottom: 110px;
+  color: white;
+}
+#TechDescription {
+  font-size: 25px;
+  margin-top: -20px;
+  font-family: "Barlow";
+  color: #d0d6f9;
+}
+.pageTitle {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  color: white;
+}
+.pageTitle h1 {
+  font-size: 30px;
+}
+.pageTitle h2 {
+  font-size: 30px;
+}
+.terminology {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  margin-bottom: -110px;
+  z-index: -1;
+  color: #d0d6f9;
+}
+
+@media only screen and (max-width: 950px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .imgInfo {
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .imgInfo img {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 0vw;
+    width: -webkit-fill-available;
+  }
+  .stringInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Barlow Condensed";
+    width: 100%;
+    margin-left: -3vw;
+  }
+  #TechName {
+    font-size: 40px;
+    height: 10%;
+    margin-top: 80px;
+  }
+  #TechDescription {
+    font-size: 30px;
+    margin-top: -20px;
+  }
+  .info {
+    margin-top: -16px;
+  }
+  .pageTitle {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  .pageTitle h1 {
+    font-size: 30px;
+  }
+  .pageTitle h2 {
+    font-size: 30px;
+  }
+  .terminology {
+    font-family: "Bellefair";
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 0.8;
+    text-transform: uppercase;
+    margin-bottom: -110px;
+  }
+  .verbalInfo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(./imgs/technologyPhotos/backgroundTech.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0b0d17;
+    height: 100%;
+  }
+  main {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    display: flex;
+    height: 85%;
+    align-items: flex-end;
+  }
+  .imgInfo {
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .imgInfo img {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    margin-top: 0px;
+  }
+  .stringInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Barlow Condensed";
+    margin: 0vh 5vw 0vh 5vw;
+  }
+  #TechName {
+    font-size: 40px;
+    height: 10%;
+    margin-top: 80px;
+  }
+  #TechDescription {
+    font-size: 30px;
+    margin-top: -50px;
+  }
+  .info {
+    margin-top: -16px;
+  }
+  .pageTitle {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .pageTitle h1 {
+    font-size: 30px;
+  }
+  .pageTitle h2 {
+    font-size: 30px;
+  }
+  .terminology {
+    font-family: "Bellefair";
+    font-weight: 400;
+    font-size: 30px;
+    opacity: 0.8;
+    text-transform: uppercase;
+    margin-bottom: -110px;
+  }
+  .verbalInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

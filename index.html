@@ -1,0 +1,94 @@
+<!-- ENUNCIADO: https://joaquim.notion.site/Projeto-1-WebMobile-2022-02-516050e225744bd4bdecd9535d1bd718-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Space Tourism</title>
+    <!--CSS PAGES-->
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="homepage.css" />
+    <!--IMPORTING FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--
+      - Matheus:
+      "destination.html"
+      - Rodrigo:
+      "crew.html"
+      - Gustavo:
+      "technology.html"
+    -->
+    <header>
+      <div class="images">
+        <img id="iconEstrela" src="./imgs/home/iconEstrela.svg" />
+        <img id="iconBarra" src="./imgs/home/Rectangle.png" />
+        <div id="menuCloser" onclick="menuClose()">
+          <img id="closeIcon" src="menuClose.svg" />
+        </div>
+        <div id="menuOpener">
+          <img src="menuOpen.svg" onclick="menuOpen()" />
+        </div>
+      </div>
+
+      <!-- MENU -->
+      <nav id="menuBar">
+        <div class="userChoices">
+          <a id="item" href="index.html"
+            ><b style="font-weight: 700;">00</b> HOME</a
+          >
+          <a id="item" href="destination.html"
+            ><b style="font-weight: 700;">01</b> DESTINATION</a
+          >
+          <a id="item" href="crew.html"
+            ><b style="font-weight: 700;">02</b> CREW</a
+          >
+          <a id="item" href="technology.html"
+            ><b style="font-weight: 700;">03</b> TECHNOLOGY</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="infoHeader">
+        <h2 style="font-family: 'Barlow Condensed', sans-serif;">
+          So, you want to travel to
+        </h2>
+        <h1 style="font-family: 'Bellefair', serif;">SPACE</h1>
+        <div id="headerP">
+          <p style="font-family: 'Lato', sans-serif;">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+      </div>
+
+      <div class="exploreDiv">
+        <div class="exploreButton">
+          <p style="font-family: 'Bellefair', serif;">EXPLORE</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="navbar.js"></script>
+  </body>
+</html>
